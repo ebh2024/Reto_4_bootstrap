@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tasa tu propiedad</title>
+
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/appbar.css">
+        <link rel="stylesheet" href="css/form.css">
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body style="background-color: #f5f5f5;">
+      <header class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+          <a class="navbar-brand nav-brand" href="#">HABITAR</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Comprar</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Tasacion</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Alquilar</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Emprendimientos</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Franquicias</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+              <li class="nav-item"><a href="#" class="btn btn-primary btn-sm" style="background-color: white; color: #3498db;">Iniciar Sesión</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <div class="container content" style="background-color: #f5f5f5;"> 
+        <div class="row">
+          <div class="col-md-6 form-container" id="izq">
+            <div class="form-header">
+              <h1>Tasa tu propiedad</h1>
+              <p>Completá el formulario y una oficina adherida a la red HABITAR se pondrá en contacto con vos para continuar con el proceso</p>
+            </div>
+            
+            <form>
+              <div class="form-group">
+                <label for="name">Nombre y apellido *</label>
+                <input type="text" class="form-control" id="name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="phone">Teléfono *</label>
+                <input type="tel" class="form-control" id="phone" required>
+                <small class="form-text text-muted">Ingrese un número completo con código de área. Ej: 112345678 (CABA) o 3511234567 (Ciudad de Córdoba)</small>
+              </div>
+              
+              <div class="form-group">
+                <label for="location">Localidad/provincia *</label>
+                <input type="text" class="form-control" id="location" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="propertyType">Tipo de propiedad *</label>
+                <select class="form-control" id="propertyType" required>
+                  <option value="" disabled selected>Seleccionar</option>
+                  <option value="casa">Casa</option>
+                  <option value="departamento">Departamento</option>
+                  <option value="terreno">Terreno</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="comments">Comentarios</label>
+                <textarea class="form-control" id="comments" rows="3"></textarea>
+                <small class="form-text text-muted">0/250</small>
+              </div>
+              
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+            
+            <p>Al enviar se están aceptando los <a id="termino" href="#">Términos y Condiciones de Uso</a> y la <a id="politica" href="#">Política de Privacidad</a></p>
+          </div>
+          <div class="col-md-6 d-none d-md-block" id="der">
+            <div class="img-container">
+              <img src="img/hogar.jpg" alt="Hogar" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="js/menu.js"></script>
+
+    </body>
+</html>
